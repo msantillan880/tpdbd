@@ -1,0 +1,263 @@
+{
+    "recetas": [
+        {
+            "apellidoPaciente": "Sanchez Pedro",
+            "apellidoProfesional": "Dr. Cesar Nodemon",
+            "codigoMatriculaProfesional": "0303456",
+            "detalles": [
+              {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2231",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 1,
+                "codigoPresentacion": "b2232",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2822",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2236",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              }
+            ],
+            "especialidadProfesional": "especialidadProfesional",
+            "fechaDispensa": "2020-10-29",
+            "fechaHoraCreacion": "2020-10-29'T'12:20:30Z",
+            "fechaReceta": "2020-10-29",
+            "fechaVencimientoReceta": "2020-10-29",
+            "financiadorPaciente": "financiador ",
+            "idSistemaEmisor": "idSistemaEmisor",
+            "idUsuarioCreacion": "idUsuarioCreacion",
+            "idUsuarioDispensa": "idUsuarioDispensa",
+            "identificacionPaciente": "identificacionPaciente",
+            "nombrePaciente": "nombrePaciente",
+            "nombreProfesional": "nombreProfesional",
+            "nroAfiliadoPaciente": "635212",
+            "nroMatriculaProfesional": "6527123",
+            "nroReceta": "1234567",
+            "planPaciente": "2 210",
+            "tipoReceta": "tipoReceta",
+            "tratamientoProlongado": "tratamientoProlongado"
+          },
+          {
+            "apellidoPaciente": "Sanchez Pedro",
+            "apellidoProfesional": "Dr. Cesar Nodemon",
+            "codigoMatriculaProfesional": "0303456",
+            "detalles": [
+              {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2231",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 1,
+                "codigoPresentacion": "b2232",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2822",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2236",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              }
+            ],
+            "especialidadProfesional": "especialidadProfesional",
+            "fechaDispensa": "2020-10-29",
+            "fechaHoraCreacion": "2020-10-29'T'12:20:30Z",
+            "fechaReceta": "2020-10-29",
+            "fechaVencimientoReceta": "2020-10-29",
+            "financiadorPaciente": "financiador ",
+            "idSistemaEmisor": "idSistemaEmisor",
+            "idUsuarioCreacion": "idUsuarioCreacion",
+            "idUsuarioDispensa": "idUsuarioDispensa",
+            "identificacionPaciente": "identificacionPaciente",
+            "nombrePaciente": "nombrePaciente",
+            "nombreProfesional": "nombreProfesional",
+            "nroAfiliadoPaciente": "635212",
+            "nroMatriculaProfesional": "6527123",
+            "nroReceta": "1234567",
+            "planPaciente": "2 210",
+            "tipoReceta": "tipoReceta",
+            "tratamientoProlongado": "tratamientoProlongado"
+          },
+          {
+            "apellidoPaciente": "Sanchez Pedro",
+            "apellidoProfesional": "Dra Maria Callback",
+            "codigoMatriculaProfesional": "0303456",
+            "detalles": [
+              {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2231",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 1,
+                "codigoPresentacion": "b2232",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2822",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2236",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              }
+            ],
+            "especialidadProfesional": "especialidadProfesional",
+            "fechaDispensa": "2020-10-29",
+            "fechaHoraCreacion": "2020-10-29'T'12:20:30Z",
+            "fechaReceta": "2020-10-29",
+            "fechaVencimientoReceta": "2020-10-29",
+            "financiadorPaciente": "financiador ",
+            "idSistemaEmisor": "idSistemaEmisor",
+            "idUsuarioCreacion": "idUsuarioCreacion",
+            "idUsuarioDispensa": "idUsuarioDispensa",
+            "identificacionPaciente": "identificacionPaciente",
+            "nombrePaciente": "nombrePaciente",
+            "nombreProfesional": "nombreProfesional",
+            "nroAfiliadoPaciente": "635212",
+            "nroMatriculaProfesional": "6527123",
+            "nroReceta": "1234567",
+            "planPaciente": "2 210",
+            "tipoReceta": "tipoReceta",
+            "tratamientoProlongado": "tratamientoProlongado"
+          },
+          {
+            "apellidoPaciente": "Dario Amigdala",
+            "apellidoProfesional": "Dr. Nelson Arrow",
+            "codigoMatriculaProfesional": "0303456",
+            "detalles": [
+              {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2231",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 1,
+                "codigoPresentacion": "b2232",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2822",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2236",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              }
+            ],
+            "especialidadProfesional": "especialidadProfesional",
+            "fechaDispensa": "2020-10-29",
+            "fechaHoraCreacion": "2020-10-29'T'12:20:30Z",
+            "fechaReceta": "2020-10-29",
+            "fechaVencimientoReceta": "2020-10-29",
+            "financiadorPaciente": "financiador ",
+            "idSistemaEmisor": "idSistemaEmisor",
+            "idUsuarioCreacion": "idUsuarioCreacion",
+            "idUsuarioDispensa": "idUsuarioDispensa",
+            "identificacionPaciente": "identificacionPaciente",
+            "nombrePaciente": "nombrePaciente",
+            "nombreProfesional": "nombreProfesional",
+            "nroAfiliadoPaciente": "635212",
+            "nroMatriculaProfesional": "6527123",
+            "nroReceta": "1234567",
+            "planPaciente": "2 210",
+            "tipoReceta": "tipoReceta",
+            "tratamientoProlongado": "tratamientoProlongado"
+          }, {
+            "apellidoPaciente": "Dario Amigdala",
+            "apellidoProfesional": "Dr. Nelson Arrow",
+            "codigoMatriculaProfesional": "0303456",
+            "detalles": [
+              {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2231",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 1,
+                "codigoPresentacion": "b2232",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2822",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              },
+                  {
+                "cantidadEnvases": 2,
+                "codigoPresentacion": "b2236",
+                "codigoProducto": "0303456",
+                "diagnostico": "Diagnostico",
+                "idDroga": "2821",
+                "indicaciones": "Indicaciones",
+                "tipoCodificacionDroga": "tipoCodificacionDroga"
+              }
+            ],
+            "especialidadProfesional": "especialidadProfesional",
+            "fechaDispensa": "2020-10-29",
+            "fechaHoraCreacion": "2020-10-29'T'12:20:30Z",
+            "fechaReceta": "2020-10-29",
+            "fechaVencimientoReceta": "2020-10-29",
+            "financiadorPaciente": "financiador ",
+            "idSistemaEmisor": "idSistemaEmisor",
+            "idUsuarioCreacion": "idUsuarioCreacion",
+            "idUsuarioDispensa": "idUsuarioDispensa",
+            "identificacionPaciente": "identificacionPaciente",
+            "nombrePaciente": "nombrePaciente",
+            "nombreProfesional": "nombreProfesional",
+            "nroAfiliadoPaciente": "635212",
+            "nroMatriculaProfesional": "6527123",
+            "nroReceta": "1234567",
+            "planPaciente": "2 210",
+            "tipoReceta": "tipoReceta",
+            "tratamientoProlongado": "tratamientoProlongado"
+          }
+    ]
+}
