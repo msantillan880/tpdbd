@@ -1,60 +1,109 @@
-import "./styles/app.css";
+const axios = require('axios');
+//const path = require('path');
 
-import Book from './models/Book.js';
-import UI from './UI.js';
+document.addEventListener('DOMContentLoaded',function(){
+    cargarTabla();
+})
+// no recomendado por el profe, falta madurez y no lo toma bien algunos browsers async await
+// recomendable usar axios sobre fetch
+async function cargarTabla(){
 
-document.addEventListener('DOMContentLoaded', () => {
-  const ui = new UI();
-  ui.renderBooks();
-});
+    /*
+        axios.get('http://localhost:3000/estudiantes')
+            .then(function(datos){})
+    */
 
+    try{
+      
+        var respuesta = await axios.get('http://localhost:3000/estudiantes')
+        console.log( typeof respuesta.data) // es un object, no es array usar siempre estas pruebas, 
+        // no se puede usar el forech, se usa map (porque es un objeto según el typeof).
+        var estudiantes = respuesta.data
+        var ttable = document.querySelector(".table")
+        var tbody = document.querySelector("#tbody")
+        tbody.innerHTML = ""
+        ttable.id ="tablaMonos"
+        estudiantes.map(function(estudiante){
+            var trEst = document.createElement('tr')
+            
+            var tdId = document.createElement('td')
+            var tdNombre = document.createElement('td')
+            var tdCurso = document.createElement('td')
+            var tdTurno = document.createElement('td')
 
-document.getElementById('book-form')
-  .addEventListener('submit', function(e) {
+            var tdAccion = document.createElement('td')
+            var botonComentar = document.createElement('button')
+            botonComentar.innerHTML = "Comentario"
+            botonComentar.classList.add('btn','btn-danger')
+            botonComentar.setAttribute('id',estudiante.id)
 
-    const title = document.getElementById('title').value;
-    const author = document.getElementById('author').value;
-    const isbn = document.getElementById('isbn').value;
-    
-    const image = document.getElementById('image').files;
-    const comment = document.getElementById('comment').value;
-    
+            botonComentar.addEventListener('click',agregarComentario)
 
-    const formData = new FormData();
-    formData.append('image', image[0]);
-    formData.append('title', title);
-    formData.append('author', author);
-    formData.append('isbn', isbn);
-    formData.append('comment', comment);
+        
+            tdAccion.appendChild(botonComentar)
 
-    // for(var pair of formData.entries()) {
-    //   console.log(pair[0]+', '+pair[1]);
-    // }
+            tdId.innerHTML = estudiante.id
+            tdNombre.innerHTML = estudiante.nombre
+            tdCurso.innerHTML = estudiante.curso
+            tdTurno.innerHTML = estudiante.turno
 
-    // Instatiating the UI
-    const ui = new UI();
+            trEst.appendChild(tdId)
+            trEst.appendChild(tdNombre)
+            trEst.appendChild(tdCurso)
+            trEst.appendChild(tdTurno)
+            trEst.appendChild(tdAccion)
 
-    // New Book Object
-    const book = new Book(title, author, isbn, comment);
-
-    // Validating User Input
-    if (title === '' || author === '' || isbn === ''|| comment === '') {
-      ui.renderMessage('Please fill all the fields', 'error', 3000);
-    } else {
-      // Pass the new book to the UI
-      ui.addANewBook(formData);
-      ui.renderMessage('New Book Added Successfully', 'success', 2000);
+            tbody.appendChild(trEst)
+        })
+    }catch(error){
+        console.log(error)
     }
+    
+}
 
-    e.preventDefault();
-  });
+function agregarComentario(event){
+    //--------------
+    function insRow(id) {
+       // var filas = document.getElementById("tablaMonos").rows.length;
+       //  var x = document.getElementById(id).insertRow(filas);
+        console.log('ultima fila:'+ id);
+        var x = document.getElementById("tablaMonos").insertRow(1);
+       var y = x.insertCell(0);
+        var z = x.insertCell(1);
+        y.innerHTML = '<input type="text" id="fname">';
+       // z.innerHTML ='<button id="btn" name="btn" > Delete</button>';
+ }
 
-document.getElementById('books-cards')
-  .addEventListener('click', e => {
-    const ui = new UI();
-    if (e.target.classList.contains('delete')) {
-      ui.deleteBook(e.target.getAttribute('_id'));
-      ui.renderMessage('Book Deleted Successfully', 'success', 3000);
-    }
-    e.preventDefault();
-  });
+    //----
+    var id = event.target.id
+    console.log ('id de receta:' + id);
+      //------------------
+      //var commentUri = 'http://localhost:4000/frontend/comment.html' //path.join(__dirname, 'frontend/comment.html') // 
+      var commentUri = "/frontend/comment.html"
+      /*  "https://www.box.com/api/oauth2/authorize?"+
+       "client_id="+clientID+
+       "&response_type=code"+
+       "&redirect_uri="+callbackUri */
+     //  window.open('/comment.html','_self')
+      // window.open(commentUri, "windowname1", 'width=1000, height=600'); //este abria un popup
+      //-----------------
+      insRow(id);
+      document.write("<iframe src=\"localhost:4000\/frontend\/comment.html\" id=\"iframe\"><\/iframe>");
+     // document.write("<iframe src="/frontend/comment.html" id=\"iframe\"><\/iframe>");
+      document.write("");
+      document.write("<script>");
+      document.write("  iframe.onload = function() {");
+      document.write("    \/\/ solo haz cualquier cosa");
+      document.write("    iframe.contentDocument.body.prepend(\"¡Hola, capo!\");");
+      document.write("  };");
+      document.write("<\/script>");
+
+       //-----------------
+    /* axios.delete('http://localhost:3000/estudiantes/' + id)
+        .then(function(respuesta){
+            console.log(respuesta)
+        })
+        .catch(function(error){
+            console.log(error)
+        }) */
+}
